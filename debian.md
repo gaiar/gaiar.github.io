@@ -28,7 +28,7 @@ sudo debootstrap --arch=armel --foreign $distro $targetdir
 ```
 
 
-Next copy the qemu-arm-static binary into the right place for the binfmt packages to find it and copy in resolv.conf from the host.
+Next copy the `qemu-arm-static` binary into the right place for the binfmt packages to find it and copy in `resolv.conf` from the host.
 
 ```bash
 sudo cp /usr/bin/qemu-arm-static $targetdir/usr/bin/
@@ -114,7 +114,7 @@ EOT
 ```
 
 
-Note: Your board will be accessible over SSH on IP address defined above !
+*Note:* Your board will be accessible over SSH on IP address defined above !
 
 
 
