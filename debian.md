@@ -1,4 +1,4 @@
-# Debootstrap
+# Debootstrap :: Debian for Lichee Pi Nano
 
 
 In this post we will explain how you can create your own Debian rootfs with pre-installed packages of your choice, which to allow tiny Linux images to be created.
