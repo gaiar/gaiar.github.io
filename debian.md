@@ -93,7 +93,6 @@ Install some useful packages inside the chroot
 apt-get install openssh-server ntpdate
 ```
 
-
 Set a root password so you can login
 
 ```bash

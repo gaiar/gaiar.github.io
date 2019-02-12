@@ -50,7 +50,7 @@
 
 ## Dev board Lichee Pi Nano
 
-![引脚映射图](http://odfef978i.bkt.clouddn.com/Pin%20Map.png)
+![Pin map](http://odfef978i.bkt.clouddn.com/Pin%20Map.png)
 
 ## SD card (2GB) partitioning
 
@@ -62,13 +62,13 @@
 | mmcblk0p3 (swap file system) | 128 MB            | swap                |
 
 
-![新建内核分区](https://s1.ax1x.com/2018/11/10/iqncrQ.png)
+![New kernel partition](https://s1.ax1x.com/2018/11/10/iqncrQ.png)
 
-![新建根文件系统分区](https://s1.ax1x.com/2018/11/10/iqnLZ9.png)
+![New root file system partition](https://s1.ax1x.com/2018/11/10/iqnLZ9.png)
 
 ## u-boot
 
-### 目录结构
+### Directory Structure
 
 ```bash
 .
@@ -114,7 +114,7 @@
 ├── scripts
 ```
 
-### 安装依赖软件包
+### Install dependencies packages
 
 `sudo apt-get install swig`
 
@@ -132,7 +132,7 @@
 
    ![环境变量配置](https://s1.ax1x.com/2018/11/10/iqQmz6.png)
 
-3. `make ARCH=arm CROSS_COMPILE=arm-suda-linux-musleabi- `
+3. `make ARCH=arm CROSS_COMPILE=arm-gaiar-linux-musleabi- `
 
 ### 添加u-boot开机画面
 

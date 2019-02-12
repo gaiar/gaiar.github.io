@@ -158,13 +158,13 @@ fatload mmc 0 0x49000000 dtbs/sun7i-a20-bananapi.dtb
 
 Установим параметры для запуска ядра:
 
-```
+```bash
 setenv bootargs console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait panic=10
 ```
 
 И скажем ему загружаться из этой области памяти, тем самым передавая управление уже ядру Linux.
 
-```
+```bash
 bootz 0x46000000 - 0x49000000
 ```
 
@@ -172,7 +172,7 @@ bootz 0x46000000 - 0x49000000
 
 Написанный нами скрипт остаётся только скомпилировать. Для этого в пакете uboot-tools есть утилита mkimage, воспользуемся ей:
 
-```
+```bash
 mkimage -C none -A arm -T script -d boot.cmd boot.scr
 ```
 
